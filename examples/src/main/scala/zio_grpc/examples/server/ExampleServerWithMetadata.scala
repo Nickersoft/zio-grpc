@@ -1,11 +1,11 @@
-package examples
+package zio_grpc.examples
 
 import examples.greeter.ZioGreeter.{Greeter, ZGreeter}
 import examples.greeter._
 import zio.clock
 import zio.clock.Clock
 import zio.console.Console
-import zio.{App, Schedule, IO, ZIO}
+import zio.{App, IO, Schedule, ZIO}
 import zio.console
 import zio.duration._
 import zio.stream.Stream

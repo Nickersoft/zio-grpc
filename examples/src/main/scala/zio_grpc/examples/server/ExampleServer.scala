@@ -1,11 +1,11 @@
-package examples
+package zio_grpc.examples
 
 import examples.greeter.ZioGreeter.Greeter
 import examples.greeter._
 import zio.clock
 import zio.clock.Clock
 import zio.console.Console
-import zio.{App, Schedule, IO, ZIO}
+import zio.{App, IO, Schedule, ZIO}
 import zio.console
 import zio.duration._
 import zio.stream.Stream
@@ -45,9 +45,8 @@ object GreeterService {
 
     def bidi(
         request: Stream[Status, Point]
-    ): Stream[Status, Response] = {
+    ): Stream[Status, Response] =
       request.grouped(3).map(r => Response(r.toString()))
-    }
   }
 
   val live: ZLayer[Clock, Nothing, GreeterService] =
