@@ -30,7 +30,7 @@ With gRPC we can define our service once in a `.proto` file and generate clients
 ## Example code and setup
 
 The example code for our tutorial is in
-[scalapb/zio-grpc/examples/src/main/scala/zio_grpc/examples/routeguide](https://github.com/scalapb/zio-grpc/tree/master/examples/src/main/scala/zio_grpc/examples/routeguide).
+[scalapb/zio-grpc/examples/routeguide/src/main/scala/zio_grpc/examples/routeguide](https://github.com/scalapb/zio-grpc/tree/master/examples/routeguide/src/main/scala/zio_grpc/examples/routeguide).
 To download the example, clone the latest release in `zio-grpc` repository by
 running the following command:
 
@@ -41,7 +41,7 @@ $ git clone -b v@zioGrpcVersion@ https://github.com/scalapb/zio-grpc.git
 Then change your current directory to `zio-grpc/examples`:
 
 ```bash
-$ cd zio-grpc/examples
+$ cd zio-grpc/examples/routeguide
 ```
 
 ## Defining the service

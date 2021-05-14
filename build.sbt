@@ -77,8 +77,7 @@ lazy val codeGen = projectMatrix
     buildInfoPackage := "scalapb.zio_grpc",
     name := "zio-grpc-codegen",
     libraryDependencies ++= Seq(
-      "com.thesamet.scalapb"   %% "compilerplugin"          % scalapb.compiler.Version.scalapbVersion,
-      "org.scala-lang.modules" %% "scala-collection-compat" % "2.4.3"
+      "com.thesamet.scalapb" %% "compilerplugin" % scalapb.compiler.Version.scalapbVersion
     )
   )
   .jvmPlatform(scalaVersions = ScalaVersions)
@@ -136,7 +135,7 @@ lazy val docs = project
     moduleName := "zio-grpc-docs",
     mdocVariables := Map(
       "sbtProtocVersion" -> "1.0.2",
-      "grpcVersion"      -> "1.37.0",
+      "grpcVersion"      -> "1.37.1",
       "zioGrpcVersion"   -> "0.5.0",
       "scalapbVersion"   -> scalapb.compiler.Version.scalapbVersion
     ),
